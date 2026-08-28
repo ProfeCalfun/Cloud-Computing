@@ -1,0 +1,172 @@
+/* ==========================================
+   CLOUD COMPUTING
+   Hoja de estilos principal
+   ========================================== */
+
+/* Configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cuerpo de la página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f8fc;
+    color: #333333;
+    text-align: center;
+}
+
+
+/* ==========================================
+   ENCABEZADO
+   ========================================== */
+
+header {
+    background-color: #0056b3;
+    color: white;
+
+    padding: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Logo */
+
+header img {
+    width: 90px;
+    height: 90px;
+
+    background-color: white;
+
+    padding: 8px;
+
+    border-radius: 50%;
+}
+
+
+/* Título principal */
+
+header h1 {
+    font-size: 36px;
+}
+
+
+/* ==========================================
+   CONTENIDO PRINCIPAL
+   ========================================== */
+
+section {
+    background-color: white;
+
+    width: 80%;
+    max-width: 900px;
+
+    margin: 50px auto;
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Títulos secundarios */
+
+section h2 {
+    color: #0056b3;
+
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+
+/* Párrafos */
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+/* ==========================================
+   TEXTO INSTITUCIONAL
+   ========================================== */
+
+body > p {
+    margin: 30px auto;
+
+    width: 80%;
+
+    font-size: 16px;
+
+    color: #555555;
+}
+
+
+/* ==========================================
+   BOTÓN
+   ========================================== */
+
+button {
+    background-color: #007bff;
+    color: white;
+
+    border: none;
+
+    padding: 15px 30px;
+
+    font-size: 18px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    margin-bottom: 50px;
+}
+
+
+/* Efecto cuando pasamos el mouse */
+
+button:hover {
+    background-color: #004c99;
+
+    transform: scale(1.05);
+}
+
+
+/* ==========================================
+   DISEÑO RESPONSIVE
+   ========================================== */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    section {
+        width: 90%;
+        padding: 25px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+
+}
